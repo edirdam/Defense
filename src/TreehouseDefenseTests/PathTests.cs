@@ -2,6 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 
 namespace TreehouseDefense.Tests
 {
@@ -39,7 +40,7 @@ namespace TreehouseDefense.Tests
             Assert.IsFalse(target.IsOnPath(new MapLocation(0, 0, _map3x3)));
         }
 
-        /*
+
         [TestMethod]
         public void GetLocationAtBeginningOfPath()
         {
@@ -67,7 +68,7 @@ namespace TreehouseDefense.Tests
             var target = _path3;
             Assert.IsNull(target.GetLocationAt(_pathLocations3.Length ));
         }
-        */
+
 
     }
 }
